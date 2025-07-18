@@ -1161,25 +1161,53 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  padding: 25px 0;
-}
+    padding: 10px 0;
+  }
 
-.clients .swiper {
-  padding: 30px 0;
-}
+  .clients .swiper {
+    padding: 40px 0;
+  }
 
-.clients .swiper-wrapper {
-  height: auto;
-}
+  .clients .swiper-wrapper {
+    height: auto;
+  }
 
-.clients .swiper-slide img {
-  transition: 0.3s;
-  width: 300px;
-}
+  /* Define tamanho fixo para os slides */
+  .clients .swiper-slide {
+    width: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.clients .swiper-slide img:hover {
-  transform: scale(1.1);
-}
+  /* Define o tamanho da imagem */
+  .clients .swiper-slide img {
+    width: 150px !important;
+    height: auto;
+    transition: 0.3s;
+  }
+
+  .clients .swiper-slide img:hover {
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 770px){
+      .clients .swiper-slide {
+          width: 150px !important;
+    }
+      .clients .swiper-slide img {
+        width: 110px !important;
+    }
+  }
+
+    @media (max-width: 570px){
+      .clients .swiper-slide {
+          width: 120px !important;
+    }
+      .clients .swiper-slide img {
+        width: 90px !important;
+    }
+  }
 
 /*--------------------------------------------------------------
 # Services Section
