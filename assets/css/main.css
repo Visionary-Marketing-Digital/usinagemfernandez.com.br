@@ -1535,7 +1535,7 @@ section,
   height: 40px;
   opacity: 0;
   transition: ease-in-out 0.3s;
-  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1559,7 +1559,7 @@ section,
 }
 
 .team .team-member .social i {
-  font-size: 18px;
+  font-size: 22px;
   margin: 0 2px;
 }
 
