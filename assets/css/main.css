@@ -606,8 +606,18 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer .footer-contact p {
+.footer .footer-contact p{
   margin-bottom: 5px;
+}
+
+.footer .footer-contact a{
+  color: var(--heading-color);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer .footer-contact a:hover{
+  color: var(--accent-color)
 }
 
 .footer .copyright {
