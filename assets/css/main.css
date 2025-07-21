@@ -1256,7 +1256,7 @@ section,
 
 .services .service-item:hover {
   border-color: var(--accent-color);
-  background-image: url('/assets/img/servicos.png');
+  background: linear-gradient(to bottom, #044380 0%, #044380cc 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
