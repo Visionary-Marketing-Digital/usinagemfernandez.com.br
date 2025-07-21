@@ -170,11 +170,18 @@ h6 {
   color: var(--accent-color);
 }
 
-@media (max-width: 575px) {
+@media (max-width: 776px) {
 
   .header .topbar .contact-info i a,
   .header .topbar .contact-info i span {
-    font-size: 13px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .topbar{
+      display: none !important;
   }
 }
 
@@ -236,7 +243,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
   .navmenu {
     padding: 0;
   }
@@ -257,8 +264,8 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: white;
-    padding: 18px 15px;
-    font-size: 17px;
+    padding: 18px 10px;
+    font-size: 15px;
     font-family: var(--nav-font);
     font-weight: 500;
     display: flex;
@@ -342,9 +349,9 @@ h6 {
 }
 
 /* Navmenu - Mobile */
-@media (max-width: 1199px) {
+@media (max-width: 799px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: var(--nav-dropdown-background-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -941,8 +948,6 @@ section,
   color: color-mix(in srgb, var(--accent-color-light), transparent 15%);
 }
 
-
-
 .hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -972,6 +977,26 @@ section,
 
   100% {
     transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 450px) {
+
+  .hero .btn-get-started {
+        font-size: 12px;
+        padding: 8px 10px;
+  }
+}
+
+@media (max-width: 305px) {
+
+  .hero .btn-get-started {
+        font-size: 8px;
+        padding: 4px 6px;
+  }
+
+  .hero .btn-get-started i{
+        font-size: 0.75rem !important;
   }
 }
 
@@ -2030,4 +2055,38 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+/*** Botões flutuantes ***/
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008531;
+  color: white;
+  border-radius: 50%;
+  font-size: 33px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background-color: #1EBE54;
+  transform: scale(1.1);
+  color: white;
+}
+
+@media (max-width: 410px){
+    .whatsapp-float {
+        width: 45px;
+        height: 45px;
+        right: 30px;
+        font-size: 30px;
+    }
 }
