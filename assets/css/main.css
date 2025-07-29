@@ -980,25 +980,6 @@ section,
   }
 }
 
-@media (max-width: 450px) {
-
-  .hero .btn-get-started {
-        font-size: 12px;
-        padding: 8px 10px;
-  }
-}
-
-@media (max-width: 305px) {
-
-  .hero .btn-get-started {
-        font-size: 8px;
-        padding: 4px 6px;
-  }
-
-  .hero .btn-get-started i{
-        font-size: 0.75rem !important;
-  }
-}
 
 /*--------------------------------------------------------------
 # Featured Services Section
